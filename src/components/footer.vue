@@ -219,5 +219,12 @@ export default {};
   border-left: none;
   padding-top: 0;
 }
+.division__two h5 {
+  
+  margin-bottom: 10px;
+}
+.about, .links {
+  margin-top: 30px;
+}
 }
 </style>
