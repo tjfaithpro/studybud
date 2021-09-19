@@ -7,7 +7,7 @@
       </div>
       <b-container>
         <b-row class="hero_text">
-          <b-col align-self="end">
+          <b-col align-self="end" data-aos="zoom-in">
             <h1>Get Motivated.</h1>
             <h1>Transiton easily</h1>
             <p>
@@ -18,8 +18,8 @@
             <b-button variant="danger" class="mt-4 w-25">Get Started</b-button>
           </b-col>
           <b-col>
-            <div class="hero-img">
-              <img src="@/assets/images/background/Image.png" alt="" />
+            <div >
+              <img class="aos-item" data-aos="zoom-out" data-aos-offset="-150" data-aos-delay="50" src="@/assets/images/background/Image.png" alt="" />
             </div>
           </b-col>
         </b-row>
@@ -28,6 +28,7 @@
 </template>
 
 <script>
+
 export default {
 
 }
@@ -35,8 +36,8 @@ export default {
 
 <style scoped>
 .hero {
-  height: 100vh;
   width: 100vw;
+  margin-bottom: 30vh;
 }
 .backgrounds {
   z-index: -2;
@@ -72,8 +73,6 @@ export default {
   z-index: -2;
 }
 .hero_text h1 {
-  font-weight: bolder;
-  font-size: 4rem;
 }
 
 </style>

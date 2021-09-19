@@ -3,7 +3,7 @@
     <h3>Lorem ipsum dolor, consectetur adipiscing elit.</h3>
     <div class="testimonials">
       <!-- Testimonial card -->
-      <div class="testimonial__card shadow bg-body rounded">
+      <div class="testimonial__card bg-body rounded" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <span class="rating">
           <img src="../../assets/images/star.svg" alt="Star avatar" />
           <img src="../../assets/images/star.svg" alt="Star avatar" />
@@ -29,7 +29,7 @@
       <!-- End of Card 1 -->
 
       <!-- Card Two -->
-      <div class="testimonial__card shadow bg-body rounded">
+      <div class="testimonial__card bg-body rounded" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <span class="rating">
           <img src="../../assets/images/star.svg" alt="Star avatar" />
           <img src="../../assets/images/star.svg" alt="Star avatar" />
@@ -54,7 +54,7 @@
       <!-- End of Card two -->
 
       <!-- Card three -->
-      <div class="testimonial__card shadow bg-body rounded">
+      <div class="testimonial__card bg-body rounded" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <span class="rating">
           <img src="../../assets/images/star.svg" alt="Star avatar" />
           <img src="../../assets/images/star.svg" alt="Star avatar" />
@@ -105,11 +105,18 @@ export default {};
   justify-content: space-between;
 }
 .testimonial__card {
-  width: 380px;
+  width: 360px;
   border: 1px solid #ebebeb;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 30px 30px;
+  
+  
+}
+.testimonial__card:hover{
+box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222), 3px 44px 54px rgba(0, 0, 0, 0.08);
+transition: all 2s;
+cursor:pointer;
 }
 .testimonial__card .testimony {
   margin: 26px 0;

@@ -6,6 +6,8 @@ import store from './store'
 import { BootstrapVue, IconsPlugin, BootstrapVueIcons  } from 'bootstrap-vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -26,11 +28,15 @@ Vue.component('app-header',header)
 Vue.component('app-footer',footer) 
 Vue.use(BootstrapVue, IconsPlugin, BootstrapVueIcons  )
 Vue.use(VueAxios, axios)
+
   
 Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  mounted(){
+    AOS.init()
+  },
 }).$mount('#app')

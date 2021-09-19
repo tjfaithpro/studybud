@@ -8,11 +8,11 @@
       <b-row>
         <b-col md="4" sm="12">
           <div class="text-center">
-            <div class="work_node work_node_1 mx-auto mb-5">
+            <div class="work_node work_node_1 mx-auto mb-5" data-aos="fade-right">
               <img src="@/assets/images/icon/search.png" />
             </div>
             <h4>Sugn Up</h4>
-            <small>
+            <small data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime
               architecto, quam alias qui, minima minus quas ipsum perspiciatis
               cum
@@ -24,11 +24,11 @@
         </b-col>
         <b-col md="4" sm="12">
           <div class="text-center">
-            <div class="work_node work_node_2 mx-auto mb-5">
+            <div class="work_node work_node_2 mx-auto mb-5" data-aos="fade-up">
               <img src="@/assets/images/icon/hand.png" />
             </div>
             <h4>Find a mentor/Pal</h4>
-            <small>
+            <small data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime
               architecto, quam alias qui, minima minus quas ipsum perspiciatis
               cum
@@ -40,11 +40,11 @@
         </b-col>
         <b-col md="4" sm="12">
           <div class="text-center">
-            <div class="work_node work_node_3 mx-auto mb-5">
+            <div class="work_node work_node_3 mx-auto mb-5" data-aos="fade-left">
               <img src="@/assets/images/icon/office.png" />
             </div>
             <h4>Start Studying</h4>
-            <small>
+            <small data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime
               architecto, quam alias qui, minima minus quas ipsum perspiciatis
               cum
@@ -52,6 +52,7 @@
           </div>
         </b-col>
       </b-row>
+      <br>
     </b-container>
 </template>
 
@@ -79,15 +80,15 @@ export default {
 }
 .work_node_1 {
   background-color: #06c270;
-  /* box-shadow: 0px 0% 2px 2px #4DDFFD; */
-  box-shadow: 0px 0% 20px 2px black;
+  box-shadow: 0px 100px 80px rgba(6, 194, 112, 0.07), 0px 64.8148px 46.8519px rgba(6, 194, 112, 0.0531), 0px 38.5185px 25.4815px rgba(6, 194, 112, 0.0425), 0px 20px 13px rgba(6, 194, 112, 0.035), 0px 8.14815px 6.51852px rgba(6, 194, 112, 0.0275), 0px 1.85185px 3.14815px rgba(6, 194, 112, 0.0169);
 }
 .work_node_2 {
   background-color: #0063F7;
+  box-shadow: 0px 100px 80px rgba(77, 223, 253, 0.07), 0px 64.8148px 46.8519px rgba(218, 218, 218, 0.0531), 0px 38.5185px 25.4815px rgba(77, 223, 253, 0.0425185), 0px 20px 13px rgba(77, 223, 253, 0.035), 0px 8.14815px 6.51852px rgba(77, 223, 253, 0.0274815), 0px 1.85185px 3.14815px rgba(77, 223, 253, 0.0168519);
 }
 .work_node_3 {
   background-color: #FF8800;
-  box-shadow: 10px 0px 9px -23px #F2B8EC;
+  box-shadow: 0px 100px 80px rgba(242, 184, 236, 0.07), 0px 64.8148px 46.8519px rgba(242, 184, 236, 0.0531481), 0px 38.5185px 25.4815px rgba(242, 184, 236, 0.0425185), 0px 20px 13px rgba(242, 184, 236, 0.035), 0px 8.14815px 6.51852px rgba(242, 184, 236, 0.0274815), 0px 1.85185px 3.14815px rgba(242, 184, 236, 0.0168519);
 }
 .linkLine{
   background-color: transparent;
@@ -104,15 +105,16 @@ export default {
   
 }
 
-@media (max-width: 768px ) {
-
-.line1{
- transform: rotate(90deg)
-}
-}
-
 .line2{
   right: 35.5%;
   position: absolute;
+}
+
+@media (max-width: 768px ) {
+
+.line1, .line2{
+ transform: rotate(90deg);
+  position: relative
+}
 }
 </style>

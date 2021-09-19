@@ -4,6 +4,7 @@
   <div>
     <PageHero/>
   </div>
+
 <!-- HOW IT WORKS ---------------------------------------- -->
   <div>
     <HowItWorks/>
@@ -30,7 +31,7 @@
 <script>
 import PageHero from '@/components/HomeComponents/Hero.vue'
 import HowItWorks from '@/components/HomeComponents/HowItWorks.vue';
-import StudyGroup from '@/components/HomeComponents/HowItWorks.vue';
+import StudyGroup from '@/components/HomeComponents/StudyGroup.vue';
 import WhyUse from "@/components/HomeComponents/WhyUse";
 import Testimonials from '@/components/HomeComponents/Testimonials.vue'
 

@@ -1,9 +1,9 @@
 <template>
   <div class="why__use">
-    <h3>Why use StudyBud?</h3>
+    <h3 data-aos="fade-up" data-aos-anchor-placement="top-center">Why use StudyBud?</h3>
     <div class="why__how">
       <!-- Image -->
-      <div class="image__section">
+      <div class="image__section" data-aos="zoom-out-down">
         <img
           src="../../assets/images/finess.svg"
           class="img-fluid"
@@ -12,9 +12,9 @@
       </div>
 
       <!-- the how section proper -->
-      <div class="how__proper">
+      <div class="how__proper" >
         <!-- Card One -->
-        <div class="how__card card__one">
+        <div class="how__card card__one" data-aos="fade-up" data-aos-anchor-placement="top-center">
           <div class="how__icon"></div>
           <div class="how__explain">
             <h5>ACCOUNTABILITY</h5>
@@ -27,7 +27,7 @@
         </div>
 
         <!-- Card Two -->
-        <div class="how__card card__two">
+        <div class="how__card card__two" data-aos="fade-up" data-aos-anchor-placement="top-center">
           <div class="how__icon"></div>
           <div class="how__explain">
             <h5>MENTORING</h5>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- cARD tHREE -->
-        <div class="how__card card__three">
+        <div class="how__card card__three" data-aos="fade-up" data-aos-anchor-placement="top-center">
           <div class="how__icon"></div>
           <div class="how__explain">
             <h5>PARTNERSHIP</h5>
