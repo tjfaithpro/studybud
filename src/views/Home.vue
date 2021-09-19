@@ -1,37 +1,29 @@
 <template>
   <div>
-      <div>
-        <h2>Hero</h2>
-      </div>
-
-      <div>
-        <h2>How it works</h2>
-      </div>
-
-    <div>
-      <h2>
-        Explore study group
-      </h2>
-    </div>
-
-
+    
 
     <!-- -------------------------------------------------------- -->
-
-    
+    <!-- Why Use -->
     <div>
-      <h3>Why use StudyBud?</h3>
-      </div>
-
-    <div>
-      <h3>Lorem ipsum dolor, consectetur adipiscing</h3>
+      <WhyUse />
     </div>
+
+    <!-- Testimonials -->
+    <div>
+      <Testimonials />
+    </div>
+
   </div>
 </template>
 
 <script>
+import WhyUse from "../components/HomeComponents/WhyUse";
+import Testimonials from '../components/HomeComponents/Testimonials.vue'
 export default {
-  name: 'Home',
- 
-}
+  name: "Home",
+  components: {
+    WhyUse,
+    Testimonials
+  },
+};
 </script>

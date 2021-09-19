@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h2>HEADER PAGE GOES HERE</h2>
+      
   </div>
 </template>
 
