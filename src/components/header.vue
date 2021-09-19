@@ -1,5 +1,6 @@
 <template>
   <b-navbar toggleable="lg"  class="shadow-sm px-5 justify-content-between" variant="white" fixed="top">
+    <b-container>
     <b-navbar-brand href="/">
     <img src="@/assets/logo.png"/>
     </b-navbar-brand>
@@ -24,6 +25,7 @@
       <b-button variant="danger" class="w-100">Login</b-button>
       </div>
     </b-collapse>
+    </b-container>
   </b-navbar>
 </template>
 

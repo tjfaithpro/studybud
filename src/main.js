@@ -3,7 +3,7 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import { BootstrapVue, IconsPlugin, BootstrapVueIcons  } from 'bootstrap-vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
@@ -24,7 +24,7 @@ import footer from '@/components/footer.vue'
 // use globally
 Vue.component('app-header',header)
 Vue.component('app-footer',footer) 
-Vue.use(BootstrapVue, IconsPlugin )
+Vue.use(BootstrapVue, IconsPlugin, BootstrapVueIcons  )
 Vue.use(VueAxios, axios)
   
 Vue.config.productionTip = false
