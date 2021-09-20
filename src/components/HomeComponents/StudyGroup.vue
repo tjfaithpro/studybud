@@ -3,7 +3,7 @@
      data-aos-anchor-placement="top-bottom">
   <div class="container">
     <b-row>
-      <b-col col md="9" sm="12">
+      <b-col cols='19' md="9" sm="12">
         <h2>Explore Study Groups</h2>
         <small>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
