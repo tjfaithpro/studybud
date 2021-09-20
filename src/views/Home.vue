@@ -1,29 +1,22 @@
 <template>
   <div class="push-down">
    <!-- Hero component -->
-  <div>
     <PageHero/>
-  </div>
-
+ 
 <!-- HOW IT WORKS ---------------------------------------- -->
-  <div>
     <HowItWorks/>
-</div>
 
 
-    <div>
      <StudyGroup />
-    </div>
-
+   
     <!-- Why Use -->
-    <div>
+   
       <WhyUse />
-    </div>
+
 
     <!-- Testimonials -->
-    <div>
       <Testimonials />
-    </div>
+
   </div>
  
 </template>
