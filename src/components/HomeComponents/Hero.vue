@@ -7,7 +7,7 @@
       </div>
       <b-container>
         <b-row class="hero_text">
-          <b-col align-self="end" data-aos="zoom-in">
+          <b-col md="6" sm="12" align-self="end" data-aos="zoom-in">
             <h1>Get Motivated.</h1>
             <h1>Transiton easily</h1>
             <p>
@@ -15,11 +15,11 @@
               the right sudy partner for fun and accuntaility and suitable
               mentors to make your journey easey.
             </p>
-            <b-button variant="danger" class="mt-4 w-25">Get Started</b-button>
+            <b-button variant="danger" class="mt-4 px-4">Get Started</b-button>
           </b-col>
-          <b-col>
+          <b-col md="6" sm="12" >
             <div >
-              <img class="aos-item" data-aos="zoom-out" data-aos-offset="-150" data-aos-delay="50" src="@/assets/images/background/Image.png" alt="" />
+              <img class="img-fluid" data-aos="zoom-out"  src="@/assets/images/background/Image.png" alt="" />
             </div>
           </b-col>
         </b-row>
@@ -35,12 +35,15 @@ export default {
 </script>
 
 <style scoped>
+
 .hero {
   width: 100vw;
   margin-bottom: 30vh;
 }
 .backgrounds {
   z-index: -2;
+  /* position: relative; */
+ /* top: -28.25%; */
 }
 .purple-circle {
   width: 46.25rem;
@@ -51,6 +54,7 @@ export default {
   top: -28.25%;
   left: 55.875%;
   z-index: -2;
+  overflow:hidden
 }
 .orange-circle {
   width: 4.5rem;

@@ -9,9 +9,11 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-body{
+body, html{
   overflow-x:hidden;
-  width: 100vw;
+}
+body{
+  margin:0;
 }
 .push-down{
   padding-top:20vh
