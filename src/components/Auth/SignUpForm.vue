@@ -1,30 +1,36 @@
 <template>
-  <div class="login__form">
+  <div class="signup__form">
     <form action="">
-      <h3>Log in to <span class="inner">StudyBud</span></h3>
+      <h3>Sign up to <span class="inner">StudyBud</span></h3>
       <div class="form__group">
-        <label for="email" class="form__label">Email</label> <br />
+        <label for="email" class="form__label">Email</label>
         <input
           type="email"
           name="email"
+          placeholder="Enter your e-mail"
           class="form__input"
-          placeholder="Enter your Email"
         />
       </div>
       <div class="form__group">
-        <label for="password" class="form__label">Password</label> <br />
+        <label for="username" class="form__label">Username</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your username"
+          class="form__input"
+        />
+      </div>
+      <div class="form__group">
+        <label for="password" class="form__label">Password</label>
         <input
           type="password"
           name="password"
-          class="form__input"
           placeholder="Your secret key"
+          class="form__input"
         />
       </div>
-      <div class="forgot">
-        <span class="text-right">Forgot Password?</span>
-      </div>
       <div class="submit">
-        <button>Login</button>
+        <button>Sign Up</button>
       </div>
     </form>
     <div class="line">
@@ -42,7 +48,7 @@
                 alt="Google avatr"
               />
             </button>
-            <button class="google__sign">Sign in with Google</button>
+            <button class="google__sign">Sign up with Google</button>
           </div>
           <div class="linkedin">
             <button class="linkedin__button">
@@ -51,16 +57,17 @@
                 alt="Linkedin SVG"
               />
             </button>
-            <button class="linkedin__sign">Sign in with Linkedin</button>
+            <button class="linkedin__sign">Sign up with Linkedin</button>
           </div>
         </div>
       </div>
     </div>
+
     <!-- No account -->
     <div class="no__account">
       <p>
-        Don’t have an account?<router-link to="sign-up">
-          <span class="inner"> Sign up</span></router-link
+        Do you have an account?<router-link to="/login">
+          <span class="inner"> Login</span></router-link
         >
       </p>
     </div>
@@ -68,19 +75,22 @@
 </template>
 
 <script>
+
 export default {
-  components: {},
+  components: {
+    
+  },
 };
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 
-.login__form {
+.signup__form {
   width: 50%;
   padding: 50px 100px;
 }
-.login__form h3 {
+.signup__form h3 {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
@@ -137,14 +147,13 @@ form input::placeholder {
   font-size: 14px;
   line-height: 32px;
 }
-
 .line hr {
   margin: 30px 0px;
   z-index: -1;
 }
 .line span {
   position: absolute;
-  bottom: 149px;
+  bottom: 69px;
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
@@ -157,7 +166,7 @@ form input::placeholder {
   right: 280px;
 }
 
-/* Social Media Auth Styles */
+/* Social Media Auth */
 .action__buttons {
   display: flex;
   justify-content: space-between;
@@ -202,7 +211,7 @@ form input::placeholder {
   background: #0072b1;
 }
 
-/* No Account */
+/* No account */
 .no__account {
   font-family: Lato;
   font-style: normal;

@@ -26,7 +26,7 @@ const routes = [
     component: Login
   },
   {
-    path: 'sign-up',
+    path: '/sign-up',
     name: 'Sign Up - StudyBud',
     component: Signup
   }
