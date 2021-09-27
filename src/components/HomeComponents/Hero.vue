@@ -15,7 +15,10 @@
               the right sudy partner for fun and accuntaility and suitable
               mentors to make your journey easey.
             </p>
+            <router-link to="/login">
+
             <b-button variant="danger" class="mt-4 px-4">Get Started</b-button>
+            </router-link>
           </b-col>
           <b-col md="6" sm="12" >
             <div >

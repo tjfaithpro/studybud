@@ -11,7 +11,7 @@
             <div class="work_node work_node_1 mx-auto mb-5" data-aos="fade-right">
               <img src="@/assets/images/icon/search.png" />
             </div>
-            <h4>Sugn Up</h4>
+            <h4>Sign Up</h4>
             <small data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maxime
               architecto, quam alias qui, minima minus quas ipsum perspiciatis

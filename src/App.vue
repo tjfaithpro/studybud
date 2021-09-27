@@ -2,7 +2,6 @@
   <div id="app">
    <app-header/>
     <router-view/>
-   <app-footer/>
 
   </div>
 </template>
@@ -17,5 +16,8 @@ body{
 }
 .push-down{
   padding-top:20vh
+}
+.inner {
+  color: #0d41e1;
 }
 </style>
