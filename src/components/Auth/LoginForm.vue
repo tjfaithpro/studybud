@@ -221,7 +221,7 @@ form input::placeholder {
 .login__form {
   width: 100vw;
   padding: 50px 20px 10px;
-  border-radius: 20px 20px 0px 0px !important;
+  border-radius: 20px;
 }
 .login__form h3 {
   

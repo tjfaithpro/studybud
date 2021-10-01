@@ -142,4 +142,32 @@ export default {
 .active span {
   color: #07c8f9;
 }
+
+@media (min-width: 320px) and (max-width: 812px)  {
+.choice__path {
+  padding: 20px;
+  width: 100vw;
+}
+.paths {
+  display: block;
+}
+.learner {
+  width: 100%;
+  margin-top: 30px;
+}
+.mentor {
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.choice__path h3 {
+  
+  position: absolute;
+  top: 34%;
+  color: #fff;
+}
+}
 </style>
