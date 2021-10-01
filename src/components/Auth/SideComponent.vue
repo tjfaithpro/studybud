@@ -91,4 +91,48 @@ export default {};
   top: 74.74%;
   bottom: 14.56%;
 }
+
+@media (min-width: 320px) and (max-width: 812px) {
+  .side__component {
+  min-height: 20vh;
+  
+  width: 100%;
+  
+}
+.images .frame5 {
+
+  left: 3.33%;
+  right: 35.56%;
+  top: 17.79%;
+  bottom: 67.66%;
+  width:64px;
+  height:64px
+}
+.images .frame4 {
+  
+  display: none;                                              
+}
+.images .frame3 {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+  
+  display: none;
+}
+.images .frame6 {
+  
+  display: none;
+}
+.images .frame1 {
+  
+  display: none;
+}
+.images .frame2 {
+  left: 73.33%;
+  right: 37.22%;
+  top: 12.74%;
+  bottom: 72.55%;
+  /* height: 140px; */
+  width: 80px;
+  height: 80px
+  
+}
+}
 </style>

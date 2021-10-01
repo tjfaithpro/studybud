@@ -216,4 +216,62 @@ form input::placeholder {
   color: #000;
   text-decoration: none !important;
 }
+
+@media (min-width: 320px) and (max-width: 812px) {
+.login__form {
+  width: 100vw;
+  padding: 50px 20px 10px;
+  border-radius: 20px 20px 0px 0px !important;
+}
+.login__form h3 {
+  
+  margin-bottom: 10px;
+  position: absolute;
+  top: 34%;
+  color: #EBEBF0;
+}
+.inner {
+color: #1995d8 !important;
+}
+
+/* Social Media Auth */
+.action__buttons {
+  display: block;
+  justify-content: space-between;
+}
+.google,
+.linkedin {
+  width: 100vw;
+}
+.google {
+  margin-bottom: 20px;
+}
+
+.google__sign {
+  background: #f03323;
+}
+.linkedin__sign {
+  background: #0072b1;
+}
+.line hr {
+  margin: 30px 0px;
+  z-index: -1;
+}
+.line span {
+  position: absolute;
+  bottom: -25px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0d41e1;
+  width: 10%;
+  background: #fff;
+  text-align: center;
+  right: 170px;
+}
+
+
+}
 </style>

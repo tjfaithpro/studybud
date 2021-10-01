@@ -30,4 +30,21 @@ import LoginForm from '@/components/Auth/LoginForm'
     
     display: flex;
 }
+
+@media (min-width: 320px) and (max-width: 812px) {
+.main__section {
+  display: block;
+  margin-top: 78px;
+}
+.form__area {
+  width: 100vw;
+}
+.action__button button {
+  width: 100%;
+  height: 56px;
+}
+.action__button {
+  padding: 0px 20px 30px;
+}
+}
 </style>

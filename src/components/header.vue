@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <b-navbar
       toggleable="lg"
-      class="shadow-sm px-5 justify-content-between"
+      class="shadow-sm px-5 justify-content-between navbar"
       variant="white"
       fixed="top"
     >
@@ -44,4 +44,9 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (min-width: 320px) and (max-width: 812px) {
+  .navbar {
+  padding: 10px 10px !important;}
+}
+</style>

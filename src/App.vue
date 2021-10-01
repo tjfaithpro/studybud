@@ -17,7 +17,9 @@ body{
 .push-down{
   padding-top:20vh
 }
+@media (min-width: 320px) and (max-width: 812px) {
 .inner {
-  color: #0d41e1;
+  color: #1698df;
+}
 }
 </style>

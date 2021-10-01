@@ -29,8 +29,8 @@
           class="form__input"
         />
       </div>
-      <div class="submit">
-        <button>Sign Up</button>
+      <div class="forgot">
+        <p>Forgot Password?</p>
       </div>
     </form>
     <div class="line">
@@ -77,8 +77,14 @@
 <script>
 
 export default {
+  props: ['nextPage'],
   components: {
     
+  },
+  methods: {
+    // nextPage() {
+    //   this.$emit('nextPage')
+    // }
   },
 };
 </script>
@@ -87,8 +93,8 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 
 .signup__form {
-  width: 50%;
-  padding: 50px 100px;
+  width: 100%;
+  padding: 50px 100px 10px;
 }
 .signup__form h3 {
   font-family: Inter;
@@ -153,7 +159,7 @@ form input::placeholder {
 }
 .line span {
   position: absolute;
-  bottom: 69px;
+  bottom: 139px;
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
@@ -224,5 +230,63 @@ form input::placeholder {
 .no__account a {
   color: #000;
   text-decoration: none !important;
+}
+
+@media (min-width: 320px) and (max-width: 812px) {
+.signup__form {
+  width: 100vw;
+  padding: 50px 20px 10px;
+  border-radius: 20px 20px 0px 0px !important;
+}
+.signup__form h3 {
+  
+  margin-bottom: 10px;
+  position: absolute;
+  top: 34%;
+  color: #EBEBF0;
+}
+.inner {
+color: #1995d8 !important;
+}
+
+/* Social Media Auth */
+.action__buttons {
+  display: block;
+  justify-content: space-between;
+}
+.google,
+.linkedin {
+  width: 100vw;
+}
+.google {
+  margin-bottom: 20px;
+}
+
+.google__sign {
+  background: #f03323;
+}
+.linkedin__sign {
+  background: #0072b1;
+}
+.line hr {
+  margin: 30px 0px;
+  z-index: -1;
+}
+.line span {
+  position: absolute;
+  bottom: -70px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0d41e1;
+  width: 10%;
+  background: #fff;
+  text-align: center;
+  right: 170px;
+}
+
+
 }
 </style>
