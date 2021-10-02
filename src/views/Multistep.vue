@@ -40,7 +40,7 @@ export default {
         { component: Learner },
         { component: Mentor },
       ],
-      currentStep: 2,
+      currentStep: 0,
       showComplete: false,
       showNext: true,
     };
