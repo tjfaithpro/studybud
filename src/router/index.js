@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '@/views/Login.vue'
 import Multistep from '@/views/Multistep.vue'
+import Learner from '@/views/Learner.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/sign-up',
     name: 'Sign Up - StudyBud',
     component: Multistep
+  },
+  {
+    path: '/profile',
+    name: 'StudyBud - Learner Profile',
+    component: Learner
   }
 ]
 

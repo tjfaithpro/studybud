@@ -24,7 +24,7 @@ import HowItWorks from "@/components/HomeComponents/HowItWorks.vue";
 import StudyGroup from "@/components/HomeComponents/StudyGroup.vue";
 import WhyUse from "@/components/HomeComponents/WhyUse";
 import Testimonials from "@/components/HomeComponents/Testimonials.vue";
-import Footer from '@/components/footer'
+import Footer from "@/components/footer";
 
 export default {
   name: "Home",
@@ -34,7 +34,7 @@ export default {
     StudyGroup,
     WhyUse,
     Testimonials,
-    Footer
+    Footer,
   },
 };
 </script>
