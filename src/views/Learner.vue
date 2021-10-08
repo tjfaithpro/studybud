@@ -11,6 +11,8 @@
     </div>
 
     <!-- Tabs Component -->
+    <!-- Footer -->
+    <Footer />
   </div>
 </template>
 
@@ -18,12 +20,14 @@
 import Header from "@/components/Learner/Header";
 import Intro from '@/components/Learner/Intro'
 import Projects from '@/components/Learner/Projects'
+import Footer from '@/components/footer'
 
 export default {
   components: {
     Header,
     Intro,
-    Projects
+    Projects,
+    Footer
   },
 };
 </script>

@@ -71,6 +71,8 @@ export default {};
   border-radius: 10px;
   border-top: 5px solid #0d41e1;
   padding: 0 20px;
+  position: sticky;
+  
 }
 .learner__intro h5 {
   font-family: Inter;
