@@ -41,4 +41,14 @@ export default {
   justify-content: space-between;
   padding: 50px 100px;
 }
+@media (min-width: 320px) and (max-width: 812px) {
+  .learner {
+  margin-top: 72px;
+}
+.profile__body {
+  display: block;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+}
 </style>

@@ -13,7 +13,7 @@
           </div>
           <div class="like">
             <i class="far fa-thumbs-up"></i>
-            <p>9</p>
+            <span>9</span>
           </div>
         </div>
       </div>
@@ -91,5 +91,81 @@ export default {
   line-height: 14px;
   text-align: center;
   color: #0d41e1;
+}
+
+@media (min-width: 320px) and (max-width: 812px) {
+  .card {
+  margin: 40px 0;
+  width: 380px;
+height: 483px;
+  
+}
+.project__image {
+  width: 380px;
+height: 200px;
+}
+.project__image img {
+  width: 100%;
+height: 100%;
+}
+.project__details {
+  padding: 20px;
+}
+.project__details h5 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #474964;
+  margin: 8px 0px;
+}
+.project__details p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+line-height: 32px;
+  /* or 200% */
+  width: 332px;
+height: 110px;
+  margin: 8px 0;
+  color: #656565;
+}
+.project__actions {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-top: 60px;
+}
+.project__actions button {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #0d41e1;
+  border: 1px solid #0d41e1;
+  border-radius: 50px;
+  padding: 6px 17px;
+}
+.project__actions .like {
+  color: #0d41e1;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+
+}
+.project__actions .like p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 110px;
+  text-align: center;
+  color: #0d41e1;
+  padding: relative;
+}
 }
 </style>
