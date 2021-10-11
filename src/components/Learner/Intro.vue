@@ -60,14 +60,11 @@
       <div class="intro__header">
         <h5>Intro</h5>
         <div class="icons">
-          <i
-            class="fas fa-chevron-down"
-            v-b-toggle.collapse-1
-          ></i>
+          <i class="fas fa-chevron-down"></i>
           <!-- <i class="fas fa-chevron-up"></i> -->
         </div>
       </div>
-      <div class="intro__details " id="collapse-1">
+      <div class="intro__details ">
         <div class="fullname">
           <div><i class="fas fa-user"></i></div>
           <p class="username">Emmanuel Stephen (@stephcrown)</p>

@@ -1,13 +1,12 @@
 <template>
   <div class="learner">
     <!-- Profile Header -->
-    <Header />
+    <!-- <Header /> -->
 
     <div class="profile__body">
-      <!-- Intro -->
-      <Intro />
-      <!-- Tabs -->
-      <Projects />
+      <!-- <Intro /> -->
+      <router-view></router-view>
+      <!-- <Projects /> -->
     </div>
 
     <!-- Tabs Component -->
@@ -17,17 +16,17 @@
 </template>
 
 <script>
-import Header from "@/components/Learner/Header";
-import Intro from '@/components/Learner/Intro'
-import Projects from '@/components/Learner/Projects'
-import Footer from '@/components/footer'
+// import Header from "@/components/Learner/Header";
+// import Intro from '@/components/Learner/Intro'
+// import Projects from '@/components/Learner/Projects'
+import Footer from "@/components/footer";
 
 export default {
   components: {
-    Header,
-    Intro,
-    Projects,
-    Footer
+    // Header,
+    // Intro,
+    // Projects,
+    Footer,
   },
 };
 </script>
@@ -36,19 +35,15 @@ export default {
 .learner {
   margin-top: 72px;
 }
-.profile__body {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 100px;
-}
+
 @media (min-width: 320px) and (max-width: 812px) {
   .learner {
-  margin-top: 72px;
-}
-.profile__body {
-  display: block;
-  justify-content: space-between;
-  padding: 50px 0px;
-}
+    margin-top: 72px;
+  }
+  .profile__body {
+    display: block;
+    justify-content: space-between;
+    padding: 50px 0px;
+  }
 }
 </style>

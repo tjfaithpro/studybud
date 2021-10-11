@@ -5,6 +5,8 @@ import Login from '@/views/Login.vue'
 import Multistep from '@/views/Multistep.vue'
 import Learner from '@/views/Learner.vue'
 
+import Projects from '@/views/Profile/Projects.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -34,7 +36,14 @@ const routes = [
   {
     path: '/profile',
     name: 'StudyBud - Learner Profile',
-    component: Learner
+    component: Learner,
+    children: [
+      {
+        path: '',
+        name: 'Projects',
+        component: Projects
+      }
+    ]
   }
 ]
 

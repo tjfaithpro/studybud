@@ -51,11 +51,7 @@
         <div class="profile__actions">
           <button><i class="far fa-paper-plane"></i> Message</button>
           <div class="tabs">
-            <p>Projects</p>
-            <p>Goals</p>
-            <p>Mentors</p>
-            <p>Learning Groups</p>
-            <p>Learning Timeline</p>
+            <Navigation />
           </div>
         </div>
       </div>
@@ -64,7 +60,12 @@
 </template>
 
 <script>
-export default {};
+import Navigation from '@/components/Learner/Navigation'
+export default {
+  components: {
+    Navigation
+  }
+};
 </script>
 
 <style scoped>
@@ -191,6 +192,9 @@ export default {};
 .profile__actions .tabs {
   display: flex;
 }
+.profile__actions .tabs a {
+  text-decoration: none;
+}
 .profile__actions .tabs p {
   margin-left: 40px;
   cursor: pointer;
@@ -304,7 +308,7 @@ export default {};
   }
   .profile__actions button {
     width: 104px;
-height: 32px;
+    height: 32px;
     background: #0d41e1;
     border-radius: 10px;
     font-family: Lato;
