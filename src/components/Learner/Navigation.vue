@@ -4,9 +4,12 @@
       <router-link to="/profile">
         <p>Projects</p>
       </router-link>
+
       <p>Goals</p>
       <p>Mentors</p>
-      <p>Learning Groups</p>
+      <router-link to="/profile/learning-group">
+        <p>Learning Groups</p>
+      </router-link>
       <p>Learning Timeline</p>
     </div>
   </div>

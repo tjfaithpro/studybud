@@ -1,20 +1,23 @@
 <template>
-  <div class="push-down">
-    <!-- Hero component -->
-    <PageHero />
+  <div>
+    <div class="push-down">
+      <Header />
+      <!-- Hero component -->
+      <PageHero />
 
-    <!-- HOW IT WORKS ---------------------------------------- -->
-    <HowItWorks />
+      <!-- HOW IT WORKS ---------------------------------------- -->
+      <HowItWorks />
 
-    <StudyGroup />
+      <StudyGroup />
 
-    <!-- Why Use -->
+      <!-- Why Use -->
 
-    <WhyUse />
+      <WhyUse />
 
-    <!-- Testimonials -->
-    <Testimonials />
-    <Footer />
+      <!-- Testimonials -->
+      <Testimonials />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -25,6 +28,7 @@ import StudyGroup from "@/components/HomeComponents/StudyGroup.vue";
 import WhyUse from "@/components/HomeComponents/WhyUse";
 import Testimonials from "@/components/HomeComponents/Testimonials.vue";
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 export default {
   name: "Home",
@@ -35,6 +39,7 @@ export default {
     WhyUse,
     Testimonials,
     Footer,
+    Header,
   },
 };
 </script>

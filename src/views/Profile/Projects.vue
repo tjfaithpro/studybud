@@ -1,11 +1,14 @@
 <template>
   <div>
+    <Navigation />
+    <div>
       <Header />
-    <div class="profile__body">
-      <!-- Intro -->
-      <Intro />
-      <!-- Tabs -->
-      <Projects />
+      <div class="profile__body">
+        <!-- Intro -->
+        <Intro />
+        <!-- Tabs -->
+        <Projects />
+      </div>
     </div>
   </div>
 </template>
@@ -13,12 +16,14 @@
 <script>
 import Intro from "@/components/Learner/Intro";
 import Projects from "@/components/Learner/Projects";
-import Header from '@/components/Learner/Header'
+import Header from "@/components/Learner/Header";
+import Navigation from "@/components/header";
 export default {
   components: {
     Intro,
     Projects,
-    Header
+    Header,
+    Navigation,
   },
 };
 </script>

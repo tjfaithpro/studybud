@@ -6,6 +6,7 @@ import Multistep from '@/views/Multistep.vue'
 import Learner from '@/views/Learner.vue'
 
 import Projects from '@/views/Profile/Projects.vue'
+import LearningGroup from '@/views/Profile/LearningGroup.vue'
 
 Vue.use(VueRouter)
 
@@ -42,6 +43,11 @@ const routes = [
         path: '',
         name: 'Projects',
         component: Projects
+      },
+      {
+        path: 'learning-group',
+        name: 'Learning Group',
+        component: LearningGroup
       }
     ]
   }
