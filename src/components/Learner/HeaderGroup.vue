@@ -59,6 +59,8 @@ export default {};
   align-items: center;
   justify-content: space-between;
   height: 72px;
+  box-shadow: 0px 1px 0px #EBEBF0;
+  border: 1px solid #EBEBF0;
 }
 .level__navigation .inner__nav ul {
   display: flex;
