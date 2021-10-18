@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="profile__head">
     <!-- Cover photo -->
     <div class="cover__photo"></div>
 
@@ -69,6 +69,9 @@ export default {
 </script>
 
 <style scoped>
+.profile__head {
+  margin-top: 72px;
+}
 .cover__photo {
   width: 100vw;
   height: 200px;

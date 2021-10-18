@@ -4,40 +4,28 @@
 
     <!-- Profile Header -->
     <!-- <Header /> -->
+  <div>
+    <div class="learner">
+      <div class="profile__body">
+        <router-view></router-view>
+      </div>
 
-    <div class="profile__body">
-      <!-- <Intro /> -->
-      <router-view></router-view>
-      <!-- <Projects /> -->
+      <Footer />
     </div>
-
-    <!-- Tabs Component -->
-    <!-- Footer -->
-    <Footer />
   </div>
 </template>
 
 <script>
-// import Header from "@/components/Learner/Header";
-// import Intro from '@/components/Learner/Intro'
-// import Projects from '@/components/Learner/Projects'
 import Footer from "@/components/footer";
 
 export default {
   components: {
-    // Header,
-    // Intro,
-    // Projects,
     Footer,
   },
 };
 </script>
 
 <style scoped>
-.learner {
-  margin-top: 72px;
-}
-
 @media (min-width: 320px) and (max-width: 812px) {
   .learner {
     margin-top: 72px;

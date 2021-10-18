@@ -1,42 +1,45 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '@/views/Login.vue'
-import Multistep from '@/views/Multistep.vue'
-import Learner from '@/views/Learner.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Login from "@/views/Login.vue";
+import Multistep from "@/views/Multistep.vue";
+import Learner from "@/views/Learner.vue";
 
 import Projects from '@/views/Profile/Projects.vue'
 import AdminLayout from '@/views/admin/layout.vue'
+import LearningGroup from "@/views/Profile/LearningGroup.vue";
+import GroupPanel from "@/components/Learner/GroupPanel.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
+    path: "/about",
+    name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: Login
+    path: "/login",
+    name: "Login",
+    component: Login,
   },
   {
-    path: '/sign-up',
-    name: 'Sign Up - StudyBud',
-    component: Multistep
+    path: "/sign-up",
+    name: "Sign Up - StudyBud",
+    component: Multistep,
   },
   {
-    path: '/profile',
-    name: 'StudyBud - Learner Profile',
+    path: "/profile",
+    name: "StudyBud - Learner Profile",
     component: Learner,
     children: [
       {
@@ -57,13 +60,24 @@ const routes = [
     //     component: Projects
     //   }
     // ]
-  }
+  },
+       
+      {
+        name: "Learning Group",
+        component: LearningGroup,
+        children: [
+          {
+            path: "html5",
+            name: "HTML5",
+            component: GroupPanel,
+          },
+        ],
+      },
 ]
-
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
