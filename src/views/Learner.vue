@@ -1,5 +1,7 @@
 <template>
   <div class="learner">
+   <app-header/>
+
     <!-- Profile Header -->
     <!-- <Header /> -->
 

@@ -1,5 +1,7 @@
 <template>
   <div class="sign-up">
+   <app-header/>
+
     <div class="main__section">
       <SideComponent />
       <div class="form__area">

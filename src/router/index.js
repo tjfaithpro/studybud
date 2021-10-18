@@ -6,6 +6,7 @@ import Multistep from '@/views/Multistep.vue'
 import Learner from '@/views/Learner.vue'
 
 import Projects from '@/views/Profile/Projects.vue'
+import AdminLayout from '@/views/admin/layout.vue'
 
 Vue.use(VueRouter)
 
@@ -44,6 +45,18 @@ const routes = [
         component: Projects
       }
     ]
+  },
+  {
+    path: '/admin',
+    name: 'Admin page',
+    component: AdminLayout,
+    // children: [
+    //   {
+    //     path: '/',
+    //     name: 'Projects',
+    //     component: Projects
+    //   }
+    // ]
   }
 ]
 
