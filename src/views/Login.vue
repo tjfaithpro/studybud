@@ -1,5 +1,7 @@
 <template>
     <div class="login">
+   <app-header/>
+
         <!-- <AuthNav /> -->
         <div class="main__section">
 

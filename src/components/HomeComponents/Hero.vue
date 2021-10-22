@@ -79,7 +79,5 @@ export default {
   right: 27%;
   z-index: -2;
 }
-.hero_text h1 {
-}
 
 </style>

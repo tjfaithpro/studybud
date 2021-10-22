@@ -9,6 +9,10 @@ import Projects from "@/views/Profile/Projects.vue";
 import LearningGroup from "@/views/Profile/LearningGroup.vue";
 import GroupPanel from "@/components/Learner/GroupPanel.vue";
 
+import AdminLayout from '@/views/admin/layout.vue'
+import Overview from '@/views/admin/overview.vue'
+
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -59,6 +63,18 @@ const routes = [
         ],
       },
     ],
+  },
+  {
+    path: '/admin',
+    name: 'Admin page',
+    component: AdminLayout,
+    children: [
+      {
+        path: '',
+        name: 'Overview',
+        component: Overview
+      }
+    ]
   },
 ];
 

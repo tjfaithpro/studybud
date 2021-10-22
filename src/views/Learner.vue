@@ -1,4 +1,9 @@
 <template>
+  <div class="learner">
+   <app-header/>
+
+    <!-- Profile Header -->
+    <!-- <Header /> -->
   <div>
     <div class="learner">
       <div class="profile__body">
