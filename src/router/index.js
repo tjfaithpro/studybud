@@ -5,10 +5,13 @@ import Login from "@/views/Login.vue";
 import Multistep from "@/views/Multistep.vue";
 import Learner from "@/views/Learner.vue";
 
-import Projects from '@/views/Profile/Projects.vue'
-import AdminLayout from '@/views/admin/layout.vue'
+import Projects from "@/views/Profile/Projects.vue";
 import LearningGroup from "@/views/Profile/LearningGroup.vue";
 import GroupPanel from "@/components/Learner/GroupPanel.vue";
+
+import AdminLayout from '@/views/admin/layout.vue'
+import Overview from '@/views/admin/overview.vue'
+
 
 Vue.use(VueRouter);
 
@@ -43,26 +46,12 @@ const routes = [
     component: Learner,
     children: [
       {
-        path: '',
-        name: 'Projects',
-        component: Projects
-      }
-    ]
-  },
-  {
-    path: '/admin',
-    name: 'Admin page',
-    component: AdminLayout,
-    // children: [
-    //   {
-    //     path: '/',
-    //     name: 'Projects',
-    //     component: Projects
-    //   }
-    // ]
-  },
-       
+        path: "",
+        name: "Projects",
+        component: Projects,
+      },
       {
+        path: "learning-group",
         name: "Learning Group",
         component: LearningGroup,
         children: [
@@ -73,7 +62,22 @@ const routes = [
           },
         ],
       },
-]
+    ],
+  },
+  {
+    path: '/admin',
+    name: 'Admin page',
+    component: AdminLayout,
+    children: [
+      {
+        path: '',
+        name: 'Overview',
+        component: Overview
+      }
+    ]
+  },
+];
+
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
