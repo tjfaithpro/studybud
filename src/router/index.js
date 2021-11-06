@@ -11,6 +11,12 @@ import GroupPanel from "@/components/Learner/GroupPanel.vue";
 
 import AdminLayout from '@/views/admin/layout.vue'
 import Overview from '@/views/admin/overview.vue'
+import Student from '@/views/admin/student.vue'
+import Content from '@/views/admin/content.vue'
+import Courses from '@/views/admin/courses.vue'
+import CoursesLayout from '@/views/admin/individual_course.vue'
+import Groups from '@/views/admin/groups.vue'
+import Settings from '@/views/admin/settings.vue'
 
 
 Vue.use(VueRouter);
@@ -73,7 +79,44 @@ const routes = [
         path: '',
         name: 'Overview',
         component: Overview
-      }
+      },
+      {
+        path: '/admin/student',
+        name: 'Student',
+        component: Student
+      },
+      {
+        path: '/admin/content',
+        name: 'Content',
+        component: Content
+      },
+      {
+        path: '/admin/courses',
+        name: 'courses',
+        component: Courses,
+        children:[
+          {
+            path: '/admin/courses/',
+            name: 'courses',
+            component:CoursesLayout
+            },
+          {
+          path: '/admin/courses/:courseName',
+          name: 'courses',
+          component:CoursesLayout
+          }
+        ]
+      },
+      {
+        path: '/admin/groups',
+        name: 'Groups',
+        component: Groups
+      },
+      {
+        path: '/admin/settings',
+        name: 'Settings',
+        component: Settings
+      },
     ]
   },
 ];

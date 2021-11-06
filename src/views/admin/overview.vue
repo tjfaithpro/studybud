@@ -3,11 +3,11 @@
     <!-- TOP ROW ============================================================== -->
     <div class="row my-3">
       <div class="col-12">
-        <small>Analytic Overview</small>
+        <small><b>Analytic Overview</b></small>
       </div>
     </div>
-    <div class="row connect">
-      <div class="col-7 m-5">
+    <div class="row connect m-2 d-flex flex-wrap">
+      <div class="col-md-7 m-3">
         <h3>Connect and Manage Tutors and Students with Ease.</h3>
         <small>Manage group activities and courses all in one platform.</small>
         <div
@@ -16,11 +16,10 @@
             d-flex
             align-items-center
             justify-content-between
-            flex-wrap
           "
         >
           <div class="d-flex align-items-center">
-            <img src="@/assets/images/icon/graduation.png" alt="" />
+            <img style="width:30px" src="@/assets/images/icon/graduation.png" alt="" />
             <div class="mx-3">
               <p class="m-0 p-0"><b>Number of Students</b></p>
               <small>2343+</small>
@@ -36,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3 m-0">
+      <div class="col-md-3 d-none d-md-block m-0">
         <img src="@/assets/images/admin/manage.png" alt="" />
       </div>
     </div>
