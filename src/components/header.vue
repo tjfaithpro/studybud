@@ -28,11 +28,11 @@
         <!-- Right aligned nav items -->
         <div class="d-flex w-25 ">
           <router-link to="/sign-up" style="margin-right:6%">
-            <b-button variant="outline-danger" class="w-100">Sign Up</b-button>
+            <b-button variant="outline-primary" style="width:6rem">Sign Up</b-button>
            
           </router-link>
           <router-link to="/login">
-            <b-button variant="danger" class="w-100">Login</b-button>
+            <b-button variant="primary" style="width:6rem">Login</b-button>
           </router-link>
         </div>
       </b-collapse>

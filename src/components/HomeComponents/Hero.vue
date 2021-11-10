@@ -51,7 +51,7 @@ export default {
 .purple-circle {
   width: 46.25rem;
   height: 46.25rem;
-  background-color: #da8083;
+  background-color: #0A85ED;
   border-radius: 100%;
   position: absolute;
   top: -28.25%;
