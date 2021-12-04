@@ -24,7 +24,7 @@
         <span class="text-right">Forgot Password?</span>
       </div>
       <div class="submit">
-        <button>Login</button>
+        <button><router-link to="/admin">Login</router-link></button>
       </div>
     </form>
     <div class="line">
